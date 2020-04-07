@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Seção 2</title>
+</head>
+
+<body>
+    <h1>data-*</h1> <!-- Usado para armazenar dados em um elemento, em (*) define-se um nome -->
+
+    <ul>
+        <li data-id="1" data-email="spencer@email.com">Spencer Ross</li>
+        <li data-id="2" data-email="logan@email.com">Logan Hugs</li>
+    </ul>
+
+    <script>
+        document.querySelectorAll('li').forEach(liData => {
+            console.log(liData.dataset);
+        });
+    </script>
+</body>
+
+</html>
