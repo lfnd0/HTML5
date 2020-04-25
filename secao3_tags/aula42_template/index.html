@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Seção 3</title>
+</head>
+
+<body>
+
+    <h1>Tag: template</h1>
+
+    <template id='tmp'>
+        <li>{{ obj }}</li>
+    </template>
+
+    <ul>
+        <!-- O 'template' será adicionado aqui -->
+    </ul>
+
+    <button type="button">Adicionar</button>
+
+    <script>
+        const btn = document.querySelector('button');
+        const template = document.querySelector('#tmp');
+        const ul = document.querySelector('ul');
+
+        btn.addEventListener('click', e => {
+            ul.append(template.content.cloneNode(true));
+        });
+    </script>
+
+</body>
+
+</html>
