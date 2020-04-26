@@ -1,0 +1,22 @@
+table {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 1em;
+}
+
+td.real {
+  text-align: right;
+}
+
+td.real:before {
+  content: 'R$';
+}
+
+tfoot tr {
+  background-color: #333;
+  color: #fff;
+}
