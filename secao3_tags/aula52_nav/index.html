@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Seção 3</title>
+    <style>
+        body {
+           margin: 0; 
+        }
+        header, footer {
+            height: 10vh;
+            background-color: #CCC;
+        }
+
+        section {
+            display: flex;
+            flex-direction: row;
+        }
+
+        main {
+            height: 80vh;
+            background-color: #CCC;
+            flex: 1;
+        }
+
+        aside {
+            height: 80vh;
+            background-color: gold;
+            width: 10vw;
+        }
+
+        ul {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Tag: nav</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+        </nav>
+    </header>
+
+    <section>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main></main>
+    </section>
+
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
