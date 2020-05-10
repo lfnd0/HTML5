@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - Seção 3</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Tag: canvas</h1>
+    </header>
+
+    <canvas id="frame"></canvas>
+
+    <footer></footer>
+
+    <script>
+        const frame = document.querySelector('#frame');
+        const context = frame.getContext('2d');
+
+        context.fillStyle = '#fff';
+        context.fillRect(0, 0, 100, 100);
+    </script>
+
+</body>
+
+</html>
