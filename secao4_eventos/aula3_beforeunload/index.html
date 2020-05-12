@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção 4 - Eventos</title>
+</head>
+
+<body onbeforeunload="return debug(event)">
+    
+    <header>
+        <h1>Event: beforeunload</h1>
+    </header>
+
+    <footer></footer>
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+            return 'Evento: ' + e.type;
+        }
+    </script>
+    
+</body>
+
+</html>

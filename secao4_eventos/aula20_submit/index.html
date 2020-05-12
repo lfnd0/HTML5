@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção 4 - Eventos</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Event: submit</h1>
+    </header>
+
+    <form onsubmit="debug(event)">
+        <input type="text">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <footer></footer>
+
+    <script>
+        function debug(e) {
+            e.preventDefault();
+            console.log('Evento: ' + e.type);
+        }
+    </script>
+    
+</body>
+
+</html>

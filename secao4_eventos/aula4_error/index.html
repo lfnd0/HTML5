@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção 4 - Eventos</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Event: error</h1>
+    </header>
+
+    <img src="img/img.gif" alt="Imagem" onerror="debug(event)">
+
+    <footer></footer>
+
+    <script>
+        function debug(e) {
+            console.log(`Evento: ${e.type}`);
+            alert(`Evento: ${e.type}`);
+        }
+    </script>
+    
+</body>
+
+</html>
