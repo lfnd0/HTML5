@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção 4 - Eventos</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Event: copy</h1>
+    </header>
+
+    <p oncopy="debug(event)">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas et, repellendus eius amet autem dicta commodi a
+        labore alias pariatur ipsa, explicabo, ex iusto exercitationem incidunt debitis est totam perspiciatis.
+    </p>
+    
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas et, repellendus eius amet autem dicta commodi a
+        labore alias pariatur ipsa, explicabo, ex iusto exercitationem incidunt debitis est totam perspiciatis.
+    </p>
+
+    <footer></footer>
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+    </script>
+
+</body>
+
+</html>

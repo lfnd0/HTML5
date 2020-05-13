@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção 4 - Eventos</title>
+    <style>
+        video {
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Event: toggle</h1>
+    </header>
+
+    <details ontoggle="debug(event)">
+        <summary>Lorem ipsum</summary>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In veniam, corrupti iusto, veritatis vero illo
+            totam odit debitis natus fuga, qui sed temporibus. Modi eligendi, porro molestias possimus fugiat voluptate?
+        </p>
+    </details>
+    
+    <footer></footer>
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+    </script>
+
+</body>
+
+</html>

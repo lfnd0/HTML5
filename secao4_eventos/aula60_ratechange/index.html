@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção 4 - Eventos</title>
+    <style>
+        video {
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Event: ratechange</h1>
+    </header>
+
+    <select onchange="setRate(event)">
+        <option>0.25</option>
+        <option>0.5</option>
+        <option>0.75</option>
+        <option>1</option>
+        <option>1.25</option>
+        <option>1.50</option>
+        <option>2</option>
+    </select>
+
+    <video src="https://storage.googleapis.com/hcode-public-storage/videos/AV1_trailer.mp4" controls
+        onratechange="debug(event)"></video>
+
+    <footer></footer>
+
+    <script>
+        function setRate(e) {
+            const value = e.target.value;
+            const video = document.querySelector('video');
+
+            video.playbackRate= parseFloat(value);
+            
+            console.log('Velocidade ' + e.target.value);
+        }
+
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+    </script>
+
+</body>
+
+</html>

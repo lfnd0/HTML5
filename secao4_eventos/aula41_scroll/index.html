@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção 4 - Eventos</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+    </style>
+</head>
+
+<body onscroll="debug(event)">
+
+    <header>
+        <h1>Event: scroll</h1>
+    </header>
+
+    <footer></footer>
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+    </script>
+
+</body>
+
+</html>
