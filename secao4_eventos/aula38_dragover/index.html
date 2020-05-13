@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção 4 - Eventos</title>
+    <style>
+        #target {
+            width: 50vh;
+            height: 50vh;
+            background-color: #c7d5e0;
+        }
+
+        #trigger {
+            width: 20vh;
+            height: 20vh;
+            background-color: #66c0f4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Event: dragover</h1>
+    </header>
+
+    <div id="target" ondragover="debug(event)"></div>
+
+    <div id="trigger" draggable="true"></div>
+
+    <footer></footer>
+
+    <script>
+        function debug(e) {
+            console.log('Evento: ' + e.type);
+        }
+    </script>
+
+</body>
+
+</html>
