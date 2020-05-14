@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+header h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.content-mtable {
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+    background-color: #FFF;
+    margin: auto;
+    padding: 20px;
+    border-radius: 4px;
+} 
+
+#num {
+    width: 100%;
+    padding: 6px;
+}
+
+.content-mtable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.content-mtable th {
+    padding: 6px;
+}
+
+.content-mtable td {
+    padding: .75em;
+    border-top: 1px solid #DEE2E6;
+}
+
+.content-mtable tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.content-mtable tbody tr:hover {
+    background-color: rgba(0, 0, 0, .15);
+}
